@@ -1,0 +1,8 @@
+*.o
+*.tar
+*.tar.gz
+
+dwm
+
+# this is not the file we edit so it should not be retained
+config.h
