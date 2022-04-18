@@ -110,6 +110,13 @@ static Key keys[] = {
 	TAGKEYS(                        XK_2,                      		1)
 	TAGKEYS(                        XK_3,                      		2)
 	TAGKEYS(                        XK_4,                      		3)
+	// audio stuff
+	{ MODKEY|ControlMask,			XK_m,			spawn,			SHCMD("audio volmute")},
+	{ MODKEY|ControlMask,			XK_u,			spawn,			SHCMD("audio volunmute")},
+	{ MODKEY|ControlMask,			XK_Up,			spawn,			SHCMD("audio volup")},
+	{ MODKEY|ControlMask,			XK_Down,		spawn,			SHCMD("audio voldown")},
+	{ MODKEY|ControlMask,			XK_a,			spawn,			SHCMD("audio appseti")},
+	{ MODKEY|ControlMask,			XK_s,			spawn,			SHCMD("audio streamseti")},
 //	{ MODKEY|ShiftMask,             XK_q,      		quit,          	{0} }, /* quit DWM */
 };
 
