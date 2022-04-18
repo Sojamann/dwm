@@ -35,7 +35,7 @@ static const char *colors[][3]      = {
 
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3" };
+static const char *tags[] = { "1", "2", "3", "4" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -94,7 +94,7 @@ static Key keys[] = {
 	{ MODKEY,           			XK_period,   	setmfact,       {.f = +0.05} }, /* increase master area size */
 	{ MODKEY,                       XK_BackSpace, 	zoom,           {0} }, /* promote slave window to master window */
 	{ MODKEY,                       XK_Tab,    		view,           {0} }, /* toggle between last two tags (virtual desktops) */
-	{ MODKEY|ShiftMask,             XK_Escape,      killclient,     {0} }, /* close focused window */
+	{ MODKEY|ShiftMask,             XK_q,      		killclient,     {0} }, /* close focused window */
 	{ MODKEY,                       XK_t,      		setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      		setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      		setlayout,      {.v = &layouts[2]} },
@@ -109,7 +109,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_1,                      		0)
 	TAGKEYS(                        XK_2,                      		1)
 	TAGKEYS(                        XK_3,                      		2)
-	{ MODKEY|ShiftMask,             XK_q,      		quit,          	{0} }, /* quit DWM */
+	TAGKEYS(                        XK_4,                      		3)
+//	{ MODKEY|ShiftMask,             XK_q,      		quit,          	{0} }, /* quit DWM */
 };
 
 /* button definitions */
